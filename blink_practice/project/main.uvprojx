@@ -80,9 +80,9 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>$K/ARM/BIN/ElfDwT.exe !L BASEADDRESS(0x1A000000)</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -133,13 +133,13 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
-          <Flash4></Flash4>
+          <Flash3>"" ()</Flash3>
+          <Flash4>.\JLinkSettings.ini</Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
           <pFcArmRoot></pFcArmRoot>
@@ -344,7 +344,7 @@
             <interw>1</interw>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <thumb>0</thumb>
+            <thumb>1</thumb>
             <SplitLS>0</SplitLS>
             <SwStkChk>0</SwStkChk>
             <NoWarn>0</NoWarn>
@@ -446,6 +446,41 @@
               <FileName>system_LPC43xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\system_LPC43xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Device</GroupName>
+          <Files>
+            <File>
+              <FileName>GPIO_LPC43xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GPIO_LPC43xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO_LPC43xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\GPIO_LPC43xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>Board_LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Board_LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED_lpc43xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LED_lpc43xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>SCU_LPC43xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SCU_LPC43xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>SCU_LPC43xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SCU_LPC43xx.h</FilePath>
             </File>
           </Files>
         </Group>

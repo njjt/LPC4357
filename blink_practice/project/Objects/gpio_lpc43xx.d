@@ -1,0 +1,10 @@
+.\objects\gpio_lpc43xx.o: GPIO_LPC43xx.c
+.\objects\gpio_lpc43xx.o: GPIO_LPC43xx.h
+.\objects\gpio_lpc43xx.o: lpc43xx.h
+.\objects\gpio_lpc43xx.o: core_cm4.h
+.\objects\gpio_lpc43xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpio_lpc43xx.o: cmsis_version.h
+.\objects\gpio_lpc43xx.o: cmsis_compiler.h
+.\objects\gpio_lpc43xx.o: cmsis_armcc.h
+.\objects\gpio_lpc43xx.o: mpu_armv7.h
+.\objects\gpio_lpc43xx.o: system_LPC43xx.h

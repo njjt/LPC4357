@@ -1,5 +1,5 @@
 Dependencies for Project 'main', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x652213B1)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x6522F2FA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (lpc43xx.h)(0x6521EEE4)
 I (core_cm4.h)(0x6522008D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
@@ -8,6 +8,7 @@ I (cmsis_compiler.h)(0x6522018A)
 I (cmsis_armcc.h)(0x652201FB)
 I (mpu_armv7.h)(0x65220348)
 I (system_LPC43xx.h)(0x6522000D)
+I (Board_LED.h)(0x6522EB7E)
 F (.\cmsis_armcc.h)(0x652201FB)()
 F (.\cmsis_compiler.h)(0x6522018A)()
 F (.\cmsis_version.h)(0x652200D9)()
@@ -16,7 +17,7 @@ F (.\lpc43xx.h)(0x6521EEE4)()
 F (.\stdint.h)(0x652200AF)()
 F (.\system_LPC43xx.h)(0x6522000D)()
 F (.\test.h)(0x6521FE0B)()
-F (.\startup_LPC43xx.s)(0x6521EBCA)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "CORE_M4 SETA 1"--list .\listings\startup_lpc43xx.lst --xref -o .\objects\startup_lpc43xx.o --depend .\objects\startup_lpc43xx.d)
+F (.\startup_LPC43xx.s)(0x6521EBCA)(--cpu Cortex-M4.fp -g --16 --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "CORE_M4 SETA 1"--list .\listings\startup_lpc43xx.lst --xref -o .\objects\startup_lpc43xx.o --depend .\objects\startup_lpc43xx.d)
 F (.\system_LPC43xx.c)(0x65220440)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\system_lpc43xx.o --omf_browse .\objects\system_lpc43xx.crf --depend .\objects\system_lpc43xx.d)
 I (LPC43xx.h)(0x6521EEE4)
 I (core_cm4.h)(0x6522008D)
@@ -26,3 +27,38 @@ I (cmsis_compiler.h)(0x6522018A)
 I (cmsis_armcc.h)(0x652201FB)
 I (mpu_armv7.h)(0x65220348)
 I (system_LPC43xx.h)(0x6522000D)
+F (.\GPIO_LPC43xx.c)(0x6522EACE)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\gpio_lpc43xx.o --omf_browse .\objects\gpio_lpc43xx.crf --depend .\objects\gpio_lpc43xx.d)
+I (GPIO_LPC43xx.h)(0x6522EADF)
+I (lpc43xx.h)(0x6521EEE4)
+I (core_cm4.h)(0x6522008D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
+I (cmsis_version.h)(0x652200D9)
+I (cmsis_compiler.h)(0x6522018A)
+I (cmsis_armcc.h)(0x652201FB)
+I (mpu_armv7.h)(0x65220348)
+I (system_LPC43xx.h)(0x6522000D)
+F (.\GPIO_LPC43xx.h)(0x6522EADF)()
+F (.\Board_LED.h)(0x6522EB7E)()
+F (.\LED_lpc43xx.c)(0x6522EBEA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\led_lpc43xx.o --omf_browse .\objects\led_lpc43xx.crf --depend .\objects\led_lpc43xx.d)
+I (SCU_LPC43xx.h)(0x6522EF30)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
+I (GPIO_LPC43xx.h)(0x6522EADF)
+I (lpc43xx.h)(0x6521EEE4)
+I (core_cm4.h)(0x6522008D)
+I (cmsis_version.h)(0x652200D9)
+I (cmsis_compiler.h)(0x6522018A)
+I (cmsis_armcc.h)(0x652201FB)
+I (mpu_armv7.h)(0x65220348)
+I (system_LPC43xx.h)(0x6522000D)
+I (Board_LED.h)(0x6522EB7E)
+F (.\SCU_LPC43xx.c)(0x6522F0C7)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\cmsis -I ..\project -I ..\user -I ..\project-I.\RTE\_Target_1-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2.9.0\Device\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DCORE_M4 -DCORE_M4-o .\objects\scu_lpc43xx.o --omf_browse .\objects\scu_lpc43xx.crf --depend .\objects\scu_lpc43xx.d)
+I (LPC43xx.h)(0x6521EEE4)
+I (core_cm4.h)(0x6522008D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
+I (cmsis_version.h)(0x652200D9)
+I (cmsis_compiler.h)(0x6522018A)
+I (cmsis_armcc.h)(0x652201FB)
+I (mpu_armv7.h)(0x65220348)
+I (system_LPC43xx.h)(0x6522000D)
+I (SCU_LPC43xx.h)(0x6522EF30)
+F (.\SCU_LPC43xx.h)(0x6522EF30)()

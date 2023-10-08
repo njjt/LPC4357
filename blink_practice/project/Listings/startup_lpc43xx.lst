@@ -725,12 +725,12 @@ ARM Macro Assembler    Page 12
   333 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\objects\startup_lpc43xx.d -o.\objects\startup_lpc43xx.o -I.\R
-TE\_Target_1 -I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_DFP\2
-.9.0\Device\Include" -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SET
-A 1" --predefine="__UVISION_VERSION SETA 525" --predefine="CORE_M4 SETA 1" --li
-st=.\listings\startup_lpc43xx.lst startup_LPC43xx.s
+Command Line: --16 --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apc
+s=interwork --depend=.\objects\startup_lpc43xx.d -o.\objects\startup_lpc43xx.o 
+-I.\RTE\_Target_1 -I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\Keil\LPC4300_
+DFP\2.9.0\Device\Include" -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLI
+B SETA 1" --predefine="__UVISION_VERSION SETA 525" --predefine="CORE_M4 SETA 1"
+ --list=.\listings\startup_lpc43xx.lst startup_LPC43xx.s
 
 
 

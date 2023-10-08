@@ -1,0 +1,12 @@
+.\objects\led_lpc43xx.o: LED_lpc43xx.c
+.\objects\led_lpc43xx.o: SCU_LPC43xx.h
+.\objects\led_lpc43xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led_lpc43xx.o: GPIO_LPC43xx.h
+.\objects\led_lpc43xx.o: lpc43xx.h
+.\objects\led_lpc43xx.o: core_cm4.h
+.\objects\led_lpc43xx.o: cmsis_version.h
+.\objects\led_lpc43xx.o: cmsis_compiler.h
+.\objects\led_lpc43xx.o: cmsis_armcc.h
+.\objects\led_lpc43xx.o: mpu_armv7.h
+.\objects\led_lpc43xx.o: system_LPC43xx.h
+.\objects\led_lpc43xx.o: Board_LED.h
