@@ -1,0 +1,9 @@
+Dependencies for Project 'my_blinky', Target 'Debug': (DO NOT MODIFY !)
+F (.\user\main.c)(0x6521F2E9)(--c99 --gnu -c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections -I ..\my_blinky -I .\cmsis -I .\user -I .\Objects -I .\Listings-I.\RTE\_Debug-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM4\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DARMCM4 -DCORE_M4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (user\lpc43xx.h)(0x6521EEE4)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4.h)(0x559D945A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D945A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D945A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D945A)
+F (.\startup_LPC43xx.s)(0x6521EBCA)(--cpu Cortex-M4 --li -g --apcs=interwork -I.\RTE\_Debug-I"C:\Users\Jinzhi Shen\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM4\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "ARMCM4 SETA 1"--list .\listings\startup_lpc43xx.lst --xref -o .\objects\startup_lpc43xx.o --depend .\objects\startup_lpc43xx.d)

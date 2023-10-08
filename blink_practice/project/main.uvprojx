@@ -7,23 +7,23 @@
 
   <Targets>
     <Target>
-      <TargetName>Debug</TargetName>
+      <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>ARMCM4</Device>
-          <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
+          <Device>LPC4357:Cortex-M4</Device>
+          <Vendor>NXP</Vendor>
+          <PackID>Keil.LPC4300_DFP.2.9.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IRAM(0x20000000,0x00020000) IROM(0x00000000,0x00040000) CPUTYPE("Cortex-M4") CLOCK(12000000) ESEL ELITTLE</Cpu>
+          <Cpu>IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000) IROM(0x1A000000,0x80000) IROM2(0x1B000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000)</FlashDriverDll>
-          <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:ARMCM4$Device\ARM\ARMCM4\Include\ARMCM4.h</RegisterFile>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD10000000 -FCFE0 -FN2 -FF0LPC18xx43xx_512_BA -FS01A000000 -FL080000 -FF1LPC18xx43xx_512_BB -FS11B000000 -FL180000 -FP0($$Device:LPC4357$Flash\LPC18xx43xx_512_BA.FLM) -FP1($$Device:LPC4357$Flash\LPC18xx43xx_512_BB.FLM))</FlashDriverDll>
+          <DeviceId>6414</DeviceId>
+          <RegisterFile>$$Device:LPC4357$Device\Include\LPC43xx.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -33,7 +33,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile></SFDFile>
+          <SFDFile>$$Device:LPC4357$SVD\LPC43xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>my_blinky</OutputName>
+          <OutputName>main</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -110,7 +110,7 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments>  -MPU</SimDllArguments>
+          <SimDllArguments> -REMAP -MPU</SimDllArguments>
           <SimDlgDll>DCM.DLL</SimDlgDll>
           <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
@@ -183,16 +183,16 @@
             <hadIRAM>1</hadIRAM>
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
-            <RvdsVP>0</RvdsVP>
-            <hadIRAM2>0</hadIRAM2>
-            <hadIROM2>0</hadIROM2>
+            <RvdsVP>2</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>1</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
-            <EndSel>1</EndSel>
+            <useUlib>1</useUlib>
+            <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
-            <RwSelD>3</RwSelD>
+            <RwSelD>4</RwSelD>
             <CodeSel>0</CodeSel>
             <OptFeed>0</OptFeed>
             <NoZi1>0</NoZi1>
@@ -204,12 +204,12 @@
             <Ro2Chk>0</Ro2Chk>
             <Ro3Chk>0</Ro3Chk>
             <Ir1Chk>1</Ir1Chk>
-            <Ir2Chk>0</Ir2Chk>
+            <Ir2Chk>1</Ir2Chk>
             <Ra1Chk>0</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
             <Im1Chk>1</Im1Chk>
-            <Im2Chk>0</Im2Chk>
+            <Im2Chk>1</Im2Chk>
             <OnChipMemories>
               <Ocm1>
                 <Type>0</Type>
@@ -243,13 +243,13 @@
               </Ocm6>
               <IRAM>
                 <Type>0</Type>
-                <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <StartAddress>0x10000000</StartAddress>
+                <Size>0x8000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <StartAddress>0x1a000000</StartAddress>
+                <Size>0x80000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -273,13 +273,13 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <StartAddress>0x1a000000</StartAddress>
+                <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <StartAddress>0x1b000000</StartAddress>
+                <Size>0x80000</Size>
               </OCR_RVCT5>
               <OCR_RVCT6>
                 <Type>0</Type>
@@ -298,13 +298,13 @@
               </OCR_RVCT8>
               <OCR_RVCT9>
                 <Type>0</Type>
-                <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <StartAddress>0x10000000</StartAddress>
+                <Size>0x8000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x10000</Size>
               </OCR_RVCT10>
             </OnChipMemories>
             <RvctStartVector></RvctStartVector>
@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>CORE_M4</Define>
               <Undefine></Undefine>
-              <IncludePath>.\cmsis</IncludePath>
+              <IncludePath>..\cmsis;..\project;..\user;..\project</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -365,8 +365,8 @@
             <noStLib>0</noStLib>
             <RepFail>1</RepFail>
             <useFile>0</useFile>
-            <TextAddressRange>0x00000000</TextAddressRange>
-            <DataAddressRange>0x20000000</DataAddressRange>
+            <TextAddressRange>0x1A000000</TextAddressRange>
+            <DataAddressRange>0x10000000</DataAddressRange>
             <pXoBase></pXoBase>
             <ScatterFile></ScatterFile>
             <IncludeLibs></IncludeLibs>
@@ -387,7 +387,47 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\user\main.c</FilePath>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>cmsis_armcc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\cmsis_armcc.h</FilePath>
+            </File>
+            <File>
+              <FileName>cmsis_compiler.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\cmsis_compiler.h</FilePath>
+            </File>
+            <File>
+              <FileName>cmsis_version.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\cmsis_version.h</FilePath>
+            </File>
+            <File>
+              <FileName>core_cm4.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\core_cm4.h</FilePath>
+            </File>
+            <File>
+              <FileName>lpc43xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lpc43xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>stdint.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\stdint.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_LPC43xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\system_LPC43xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>test.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\test.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -401,6 +441,11 @@
               <FileName>startup_LPC43xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\startup_LPC43xx.s</FilePath>
+            </File>
+            <File>
+              <FileName>system_LPC43xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\system_LPC43xx.c</FilePath>
             </File>
           </Files>
         </Group>

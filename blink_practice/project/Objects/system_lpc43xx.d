@@ -1,0 +1,9 @@
+.\objects\system_lpc43xx.o: system_LPC43xx.c
+.\objects\system_lpc43xx.o: LPC43xx.h
+.\objects\system_lpc43xx.o: core_cm4.h
+.\objects\system_lpc43xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_lpc43xx.o: cmsis_version.h
+.\objects\system_lpc43xx.o: cmsis_compiler.h
+.\objects\system_lpc43xx.o: cmsis_armcc.h
+.\objects\system_lpc43xx.o: mpu_armv7.h
+.\objects\system_lpc43xx.o: system_LPC43xx.h
