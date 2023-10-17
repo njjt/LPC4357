@@ -14,4 +14,4 @@ void delay_ms(uint32_t milliseconds) {
 }
 
 2023/10/17
-Find a nice tutorial site for this CPU http://lpc4300.com/lpc4357
+Found a nice tutorial site for this CPU http://lpc4300.com/lpc4357
