@@ -15,3 +15,7 @@ void delay_ms(uint32_t milliseconds) {
 
 2023/10/17
 Found a nice tutorial site for this CPU http://lpc4300.com/lpc4357
+
+2023/1/26
+We are aiming to transfer a operating system. The learning process is on qemu for x86.
+
